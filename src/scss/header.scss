@@ -1,0 +1,45 @@
+.logo{
+  height: 90px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+
+    p{
+     // color: #50BBB4;
+      margin-left: 20px;
+      text-transform: uppercase;
+    }
+
+    img{
+      width: 190px;
+      object-fit: cover;
+    }
+}
+.menu{
+  margin-top: 5px;
+  width: 100%;
+  background-color: #333333;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  ul{
+    margin-left: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+   // align-items: center;
+
+    li{
+      margin-right: 46px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #e6e6e6;
+      text-transform: uppercase;
+      list-style: none;
+    }
+  }
+
+}

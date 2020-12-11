@@ -1,0 +1,115 @@
+.slider_container{
+  width: 100%;
+  //height: 558px;
+
+  .gallery {
+    width: 100%;
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #120C12;
+    justify-content: center;
+    .slider {
+      width: 100%;
+      //max-width: 1176px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+
+      .stage {
+        overflow: hidden;
+        .rec {
+          float: left;
+          position: relative;
+          width: 100%;
+          //height: px;
+          background: #120C12;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 640px;
+            //margin-top: 33px;
+            //height: 50px;
+          }
+          p {
+            margin: 17.38px auto 20px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #f1f1f1;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .control {
+      //display: none;
+      position: relative;
+
+      .nav-ctrl {
+        display: none;
+        .prev{
+          position: absolute;
+          top: 85px;
+          left: -12px;
+       //   background-image: url("../img/top_rec/slider_arrow_right.svg");
+          background-size: cover;
+          width: 12px;
+          height: 21px;
+          transform: rotate(180deg);
+        }
+        .next{
+          position: absolute;
+          top: 85px;
+          right: -12px;
+          //background-image: url("../img/top_rec/slider_arrow_right.svg");
+          background-size: cover;
+          width: 12px;
+          height: 21px;
+        }
+      }
+      .dots-ctrl {
+        left: 0;
+        right: 0;
+        margin-bottom: 20px;
+
+        li {
+          display: inline-block;
+        }
+        span {
+          width: 8px;
+          height: 8px;
+          display: block;
+          margin: 5px;
+          -webkit-border-radius: 50%;
+          border-radius: 50%;
+          background-color: #ffffff;
+          cursor: pointer
+        }
+      }
+
+      .dots-ctrl .active span {
+        opacity: 1;
+        width: 16px;
+        border-radius: 8px;
+      }
+      .dots-ctrl span:hover{
+        background-color: #FFCB24;
+      }
+
+    }
+
+    .nav-ctrl span:hover {
+      cursor: pointer;
+    }
+    .nav-ctrl .disable, .nav-ctrl .disable:hover {
+      opacity: 0.1;
+      cursor: default
+    }
+
+  }
+
+}

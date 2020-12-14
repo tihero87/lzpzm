@@ -2,31 +2,10 @@
   display: grid;
   justify-content: center;
   background-color: #2c353d;
-  height: 1300px;
+  //height: 1300px;
   color: #ffffff;
   position: relative;
-
-  h1{
-    grid-column: 1/4;
-    justify-self: center;
-    margin: 60px;
-    text-transform: uppercase;
-    font-size: 28px;
-    letter-spacing: 4px;
-    position: relative;
-  }
-  h1::after{
-    position: absolute;
-    content: "";
-    width: 120px;
-    border-bottom: 2px solid #50bbb4;
-    text-align: center;
-    top: 28px;
-    left: 0;
-    right: 0;
-    margin: 20px auto;
-    transition: all .3s ease;
-  }
+  padding-bottom: 180px;
 
   .bg_box {
     width: 100%;
@@ -36,11 +15,8 @@
     img {
       object-fit: cover;
       width: 100%;
-
     }
   }
-
-
   &::before {
     position: absolute;
     content: "";
@@ -52,5 +28,38 @@
     object-fit: cover;
     background-image: url("../img/why_we/teplovoz.jpg");
     mix-blend-mode: overlay;
+  }
+
+  [data-icon]:before {
+    font-family: "MyFoundicons"; /* BYO icon font, mapped smartly */
+    content: attr(data-icon);
+    speak: none; /* Not to be trusted, but hey. */
+    font-size: 60px;
+  }
+
+  .wrap{
+    .why_we_container{
+      .why_we_block{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: nowrap;
+        //align-items: center;
+        span{
+
+          margin-right: 40px;
+        }
+        h2{
+          text-transform: uppercase;
+          font-size: 18px;
+          margin-bottom: 24px;
+        }
+        p{
+          line-height: 26px;
+          font-size: 16px;
+        }
+
+      }
+    }
+
   }
 }

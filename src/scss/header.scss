@@ -4,21 +4,44 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
   font-size: 40px;
   font-weight: 500;
 
+  .logo_lz{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     p{
-     // color: #50BBB4;
+      // color: #50BBB4;
       margin-left: 20px;
       text-transform: uppercase;
-      letter-spacing: 6px;
+      letter-spacing: 4px;
+      font-weight: 400;
     }
-
     img{
-      width: 190px;
+      width: 180px;
       object-fit: cover;
     }
+  }
+  .social_icons{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    a svg path{
+      transition: 300ms;
+      transition-timing-function: ease-in-out;
+      -webkit-transition: 300ms;
+      -webkit-transition-timing-function: ease-in-out;
+    }
+    a svg:hover path{
+      fill: #50bbb4;
+
+    }
+  }
+
+
 }
 .menu{
   margin-top: 5px;

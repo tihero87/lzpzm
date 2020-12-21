@@ -1,0 +1,10 @@
+.wrap{
+  .page_container{
+    h4::after{
+      top: 20px;
+    }
+    .twin_col{
+      grid-column: 1/3;
+    }
+  }
+}

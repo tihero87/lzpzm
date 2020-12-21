@@ -52,8 +52,78 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
+            filename: 'index.html',
             template: './index.html'
         }),
+        new HTMLWebpackPlugin({
+            filename: 'about.html',
+            template: './about.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'foundry.html',
+            template: './foundry.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'mechanical.html',
+            template: './mechanical.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'modal.html',
+            template: './modal.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'term.html',
+            template: './term.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'control.html',
+            template: './control.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'delivery.html',
+            template: './delivery.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'cert.html',
+            template: './cert.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'career.html',
+            template: './career.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: '15_120.html',
+            template: './15_120.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: '5_15.html',
+            template: './5_15.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: '5.html',
+            template: './5.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'snaps.html',
+            template: './snaps.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'blog.html',
+            template: './blog.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'contacts.html',
+            template: './contacts.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'leaders.html',
+            template: './leaders.html'
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'managers.html',
+            template: './managers.html'
+        }),
+
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
             {
@@ -65,4 +135,11 @@ module.exports = {
             filename: 'style.css'
         })
     ]
+    //надо как-то так переделать plugins: [
+    //     ...PAGES.map((page) => new HtmlWebpackPlugin({
+    //       template: `${PAGES_DIR}/${page}`,
+    //       filename: `./${page}`,
+    //       inject: true,
+    //     })),
+    //   ],
 };

@@ -1,0 +1,17 @@
+.page_container{
+  ul{
+    li{
+      margin-left: 20px;
+      line-height: 26px;
+    }
+  }
+
+  .img_box{
+    //grid-row: 1;
+    grid-column: 1/4;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -16,7 +16,29 @@
       position: relative;
       overflow: hidden;
       margin: 0 auto;
+      .slogan{
+        display: flex;
+        //align-items: ;
+        position: absolute;
+     // font-size: 30px;
+        font-size: calc(14px + 32 * (100vw - 320px)/1920);
+        //text-transform: uppercase;
+        //top: 300px;
+        padding: calc(10px + 20 * (100vw - 320px)/1920) 0 0 calc(16px + 70 * (100vw - 320px)/1920);
+        letter-spacing: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        //height: 186px;
+        height: calc(116px + 60 * (100vw - 320px)/1920);
+        width: 100%;
+        z-index: 4;
+        color: #e6e6e6;
+        background-color: rgba(80,187,180, 0.8);
+        //line-height: 42px;
+        line-height: calc(20px + 48 * (100vw - 320px)/1920);
 
+      }
       .stage {
         overflow: hidden;
         .rec {
@@ -47,7 +69,10 @@
 
     .control {
       //display: none;
-      position: relative;
+     // position: relative;
+      position: absolute;
+      bottom: 0;
+      z-index: 5;
 
       .nav-ctrl {
         display: none;
@@ -97,9 +122,8 @@
         border-radius: 8px;
       }
       .dots-ctrl span:hover{
-        background-color: #FFCB24;
+        background-color: rgb(80,80,80);
       }
-
     }
 
     .nav-ctrl span:hover {
@@ -109,7 +133,5 @@
       opacity: 0.1;
       cursor: default
     }
-
   }
-
 }

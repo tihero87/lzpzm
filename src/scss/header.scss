@@ -6,7 +6,9 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 40px;
+  //font-size: 40px;
+  font-size: calc(16px + 30 * (100vw - 320px)/1920);
+  //calc(44px + 33.6 * ((100vw - 320px)/1920));
   font-weight: 500;
 
   .logo_lz{
@@ -26,6 +28,8 @@
     }
   }
   .social_icons{
+    //border: #50bbb4 1px solid;
+
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -37,11 +41,14 @@
     }
     a svg:hover path{
       fill: #50bbb4;
-
+    }
+    a{
+      svg{
+        margin: 0;
+      //  margin-right: -20px;
+      }
     }
   }
-
-
 }
 .menu{
   margin-top: 5px;
@@ -52,14 +59,20 @@
   align-items: center;
   position: relative;
   ul{
-    margin-left: 90px;
+    //margin-left: 90px;
+    margin-left: calc(16px + 80 * (100vw - 560px)/1920);
+    //calc(16px + 30 * (100vw - 320px)/1920);
     display: flex;
     flex-wrap: nowrap;
-   // align-items: center;
+
+    a{
+      text-decoration: none;
+    }
 
     li{
       transition: 0.3s;
-      margin-right: 46px;
+     // margin-right: 46px;
+      margin-right: calc(16px + 64 * (100vw - 560px)/1920);
       font-size: 16px;
       font-weight: bold;
       color: #e6e6e6;
@@ -70,13 +83,12 @@
         display: none;
         position: absolute;
         background-color: #2c353d;
-       // width: 240px;
         max-width: 320px;
-       // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         z-index: 1;
       }
 
       .dropdown-content a {
+        transition: 0.3s;
         color: #e6e6e6;
         padding: 10px 16px;
         text-decoration: none;
@@ -88,14 +100,11 @@
         padding-top: 20px;
       }
       .dropdown-content a:hover {
-       // color: #ffffff;
         color: #50bbb4;
-        //font-weight: 500;
       }
 
     }
     li:hover{
-      //color: #fff;
       color: #50bbb4;
       cursor: pointer;
       .dropdown-content{
@@ -105,4 +114,19 @@
     }
   }
 
+}
+@media (max-width: 760px) {
+  .logo {
+    height: unset;
+    flex-wrap: wrap;
+
+    .logo_lz {
+      flex-wrap: wrap;
+      width: 100%;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
 }

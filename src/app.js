@@ -13,4 +13,6 @@ import './js/slider_start.js';
 import './scss/foundry.scss';
 import './scss/control.scss';
 import './scss/delivery.scss';
+import './scss/mechanical.scss';
+
 

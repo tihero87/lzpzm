@@ -58,15 +58,23 @@
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 10;
   ul{
     //margin-left: 90px;
     margin-left: calc(16px + 80 * (100vw - 560px)/1920);
-    //calc(16px + 30 * (100vw - 320px)/1920);
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
 
     a{
       text-decoration: none;
+      li:hover{
+        svg{
+          path{
+            stroke: #50bbb4;
+          }
+        }
+      }
     }
 
     li{
@@ -102,18 +110,89 @@
       .dropdown-content a:hover {
         color: #50bbb4;
       }
-
     }
     li:hover{
       color: #50bbb4;
       cursor: pointer;
       .dropdown-content{
         display: block;
-
       }
     }
   }
+  .burger {
+    position: relative;
+    padding: 12px 24px;
+    width: 20px;
+    height: 20px;
+    display: none;
 
+    input{
+      display: none;
+      z-index: 1001;
+    }
+    input:checked + label{
+      .line_center {
+        opacity: 0;
+      }
+      .line_top{
+        z-index: 1001;
+        transform: rotate(45deg);
+        top: 6px;
+      }
+      .line_bottom{
+        z-index: 1001;
+        transform: rotate(-45deg);
+        top: 6px;
+      }
+    }
+    label {
+      position: absolute;
+      cursor: pointer;
+      display: block;
+      height: 20px;
+      width: 20px;
+      .line{
+        transition: 0.5s;
+        width: 25px;
+        height: 2px;
+        background-color: #f1f1f1;
+        position: absolute;
+      }
+      .line_center {
+        top: 6px;
+      }
+      .line_bottom{
+        top: 12px;
+      }
+    }
+  }
+}
+.vertical{
+//  transition: all 0.8s ease;
+
+  display: block;
+  height: auto;
+  z-index: 99;
+  ul {
+    display: block;
+    padding-bottom: 40px;
+
+    li {
+      transition: 0.8s;
+      margin-top: 16px;
+      display: block;
+    }
+
+    li:hover {
+      padding-left: 120px;
+    }
+    li:first-child{
+      padding-left: 0;
+    }
+    li:nth-child(0){
+      padding-left: 0;
+    }
+  }
 }
 @media (max-width: 760px) {
   .logo {
@@ -126,6 +205,26 @@
 
       p {
         width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .menu {
+    ul{
+      li{
+        display: none;
+      }
+    }
+    .burger{
+      display: block;
+    }
+  }
+  .vertical{
+
+    ul{
+      li{
+        display: block;
       }
     }
   }

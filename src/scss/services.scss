@@ -3,7 +3,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 60px;
-
+    a{
+      text-decoration: none;
+    }
+    a:visited{
+      color: #000;
+    }
     .service{
       margin-bottom: 80px;
       .img_box{

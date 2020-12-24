@@ -9,10 +9,10 @@ import './scss/featured_work.scss';
 import './scss/about.scss';
 import './js/slider.function';
 import './js/slider_start.js';
-
 import './scss/foundry.scss';
 import './scss/control.scss';
 import './scss/delivery.scss';
 import './scss/mechanical.scss';
+import './scss/term.scss';
 
 

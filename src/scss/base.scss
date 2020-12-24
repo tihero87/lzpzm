@@ -17,17 +17,18 @@
     .grid_container{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 60px;
+      grid-column-gap: calc(16px + 50  * (100vw - 320px)/1920);
     }
     .page_container{
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: space-between;
-      grid-gap: 80px;
-      margin: 80px 0 80px 0;
+      grid-gap: calc(40px + 70  * (100vw - 320px)/1920);
+      margin: calc(20px + 70  * (100vw - 320px)/1920) 0;
 
       h3{
-        font-size: 24px;
+        //font-size: 24px;
+        font-size: calc(18px + 8 * (100vw - 320px)/1920);
         position: relative;
         margin-bottom: 20px;
         font-weight: 400;
@@ -48,9 +49,9 @@
       }
       h4{
         transition: all 0.8s ease;
-        font-size: 20px;
+        //font-size: 20px;
+        font-size: calc(16px + 5 * (100vw - 320px)/1920);
         position: relative;
-        margin-bottom: 20px;
         font-weight: 400;
         letter-spacing: 2px;
         line-height: 26px;
@@ -82,6 +83,8 @@
         //border-radius: 50px;
         overflow: hidden;
         img{
+          width: 100%;
+          // height: 100%;
           transition: 0.8s;
           cursor: pointer;
           &:hover{
@@ -90,6 +93,7 @@
         }
       }
       ul{
+
         li{
           list-style: circle;
         }
@@ -99,7 +103,10 @@
       }
     }
     .gap_row_20{
-      grid-row-gap: 30px;
+      grid-row-gap: 40px;
+    }
+    .gap_col_20{
+      grid-column-gap: 40px;
     }
 
 
@@ -127,6 +134,14 @@
         margin: 20px auto;
         transition: all .3s ease;
       }
+    h5{
+      //font-size: 18px;
+      font-size: calc(16px + 2 * (100vw - 320px)/1920);
+      font-weight: 500;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      line-height: 24px;
+    }
   }
   .img_header{
     width: 100%;
@@ -152,6 +167,26 @@
     }
   }
 }
+@media (max-width: 999px) {
+
+    .wrap{
+
+      .page_container{
+        grid-template-columns: 1fr;
+        .h1,h2,h3,h4,h5{
+        //  grid-column: 1/2;
+        }
+        .img_container{
+          grid-column: 1/2;
+        }
+        .twin_col{
+          grid-column: 1/2;
+        }
+      }
+    }
+
+}
+
 @media (max-width: 760px) {
   * {
     .wrap {

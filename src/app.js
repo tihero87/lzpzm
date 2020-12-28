@@ -14,5 +14,10 @@ import './scss/control.scss';
 import './scss/delivery.scss';
 import './scss/mechanical.scss';
 import './scss/term.scss';
-
+import './scss/blog.scss';
+import './scss/article.scss';
+import './scss/products.scss';
+import './scss/contacts.scss';
+import './scss/leaders.scss';
+import './scss/managers.scss';
 

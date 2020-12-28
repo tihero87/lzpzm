@@ -34,25 +34,33 @@
     font-family: "MyFoundicons"; /* BYO icon font, mapped smartly */
     content: attr(data-icon);
     speak: none; /* Not to be trusted, but hey. */
-    font-size: 60px;
+    font-size: 36px;
   }
 
   .wrap{
     .why_we_container{
+      grid-column-gap: 40px;
       .why_we_block{
         margin-top: 60px;
         display: flex;
         flex-wrap: nowrap;
         //align-items: center;
-        span{
+        .why_we_block_icons{
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          span{
+            margin-right: 20px;
+            margin-top: -6px;
+            margin-bottom: 20px;
+          }
+          h2{
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-bottom: 24px;
+          }
+        }
 
-          margin-right: 40px;
-        }
-        h2{
-          text-transform: uppercase;
-          font-size: 18px;
-          margin-bottom: 24px;
-        }
         p{
           line-height: 26px;
           font-size: 16px;

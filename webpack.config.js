@@ -124,6 +124,11 @@ module.exports = {
             filename: 'managers.html',
             template: './managers.html'
         }),
+        new HTMLWebpackPlugin({
+            filename: 'article.html',
+            template: './article.html'
+        }),
+
 
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([

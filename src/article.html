@@ -1,12 +1,19 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    <link rel="shortcut icon" type="img/png" href="./img/favicon.ico"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <link rel="import" href="code.html">
+        -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
-    <title>О компании</title>
+
+    <title>ЛЗ ПМЗ </title>
 </head>
+
 <body>
 <header>
     <div class="logo">
@@ -53,14 +60,22 @@
                 </svg>
             </a>
         </div>
-
     </div>
-    <menu class="menu">
+    <menu class="menu" aria-haspopup="true" onclick="">
         <ul>
-            <li><a href="/">
-                <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
-                     viewBox="0 0 64 61" enable-background="new 0 0 64 61" xml:space="preserve">
+            <div class="burger">
+                <input id="nav" type="checkbox">
+                <label for="nav">
+                    <div class="line line_top"></div>
+                    <div class="line line_center"></div>
+                    <div class="line line_bottom"></div>
+                </label>
+            </div>
+            <a href="/">
+                <li>
+                    <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
+                         viewBox="0 0 64 61" enable-background="new 0 0 64 61" xml:space="preserve">
 
                             <g id="Page-1" sketch:type="MSPage">
                                 <g id="House" transform="translate(1.000000, 2.000000)" sketch:type="MSLayerGroup">
@@ -75,98 +90,86 @@
                                 </g>
                             </g>
                         </svg>
+                </li>
             </a>
-            </li>
-            <li>Компания
+            <li class="slide">Компания
                 <div class="dropdown-content">
-                    <a href="#">О компании</a>
-                    <a href="#">Контроль качества</a>
-                    <a href="#">Доставка</a>
-                    <a href="#">Сертификация</a>
-                    <a href="#">Карьера в компании</a>
+                    <a href="about.html">О компании</a>
+                    <a href="control.html">Контроль качества</a>
+                    <a href="delivery.html">Доставка</a>
+                    <a href="cert.html">Сертификация</a>
+                    <a href="career.html">Карьера в компании</a>
                 </div>
             </li>
             <li>Производство
                 <div class="dropdown-content">
-                    <a href="#">Литейное производство</a>
-                    <a href="#">Механическая обработка</a>
-                    <a href="#">Производство модельных оснасток</a>
-                    <a href="#">Термическая обработка</a>
+                    <a href="foundry.html">Литейное производство</a>
+                    <a href="mechanical.html">Механическая обработка</a>
+                    <a href="modal.html">Производство модельных оснасток</a>
+                    <a href="term.html">Термическая обработка и участок окраски отливок</a>
                 </div>
             </li>
             <li >Продукция
                 <div class="dropdown-content">
-                    <a href="#">Отливки массой  от 15 до 120 тонн</a>
-                    <a href="#">Отливки массой от 5 до 15 тонн</a>
-                    <a href="#">Отливки массой до 5 тонн</a>
-                    <a href="#">Модельные оснастки</a>
+                    <a href="15_120.html">Отливки массой  от 15 до 120 тонн</a>
+                    <a href="5_15.html">Отливки массой от 5 до 15 тонн</a>
+                    <a href="5.html">Отливки массой до 5 тонн</a>
+                    <a href="snaps.html">Модельные оснастки</a>
                 </div>
             </li>
-            <li>Блог</li>
-            <li>Контакты</li>
+            <a href="blog.html">
+                <li>Блог
+
+                </li>
+            </a>
+            <li>Контакты
+                <div class="dropdown-content">
+                    <a href="contacts.html">Общая информация</a>
+                    <a href="leaders.html">Руководство</a>
+                    <a href="managers.html">Менеджеры</a>
+                </div>
+            </li>
         </ul>
     </menu>
 </header>
-<div class="img_header">
-    <img src="./img/2header.jpg" />
-</div>
 
-<div class="wrap">
-    <div class="page_container products">
-        <h1>Отливки массой  до 5 тонн</h1>
 
-        <div class="">
-            <ul>
-                <li>Блоки и картеры мультимегаваттных двигателей</li>
-                <li>Цилиндро-поршневая группа мультимегаваттных двигателей</li>
-                <li>Комплектующие станкостроения</li>
-                <li>Комплектующие для с/х техники и техники для дорожного строительства</li>
-            </ul>
-        </div>
-        <p>
-            Это далеко не полный перечень наших возможностей.
-            Мы с радостью рассмотрим Ваш заказ и предложим Вам лучшее качество!
-        </p>
+
+
+<div class="page_article">
+    <div class="header_blog">
 
     </div>
-    <div class="products_mb">
-        <div class="slider_container">
-            <div id="gallery" class="gallery gallery1">
-                <div class="slider">
-                    <div class="stage" style="overflow-x: hidden;">
-                        <div class="rec">
-                            <img src="./img/products/10.jpg"/>
-                        </div>
-                        <div class="rec">
-                            <img src="./img/products/11.jpg"/>
-                        </div>
-                        <div class="rec">
-                            <img src="./img/products/12.jpg"/>
-                        </div>
-                        <div class="rec">
-                            <img src="./img/products/13.jpg"/>
-                        </div>
-                        <div class="rec">
-                            <img src="./img/products/14.jpg"/>
-                        </div>
-                        <div class="rec">
-                            <img src="./img/products/15.jpg"/>
-                        </div>
 
-                    </div>
-                    <div class="control">
-                        <div class="nav-ctrl">
-                            <span class="prev" data-shift="prev"></span>
-                            <span class="next" data-shift="next"></span>
-                        </div>
-                        <ul class="dots-ctrl"></ul>
-                    </div>
-                </div>
+    <div class="wrap">
+        <div class="pa_back">
+            <a href="./blog">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z" fill="#807C80"/>
+                </svg>
+                Вернуться
+            </a>
+        </div>
+        <div class="pa_top">
+            <div class="pa_top_text">
+                <h2>Комьюнити-менеджер — недооцененная профессия</h2>
+                <p>Разбираемся, как управлять комьюнити, где брать ответственных комьюнити-менеджеров и какие скиллы качать, чтобы собирать вокруг себя лояльную аудитори</p>
+                <p class="article_date">22 апреля 2020</p>
             </div>
+            <img src="./img/control/1.jpg">
         </div>
+        <hr>
+        <div class="pa_text">
+            <p>«Комьюнити-менеджер» — название, которое сегодня чаще всего употребляется в отношении модераторов интернет-сообществ. Но говорить, что комьюнити-менеджментом занимаются только SMM-специалисты и администраторы групп в социальных сетях, — значит искусственно ограничивать очень широкое понятие. На самом деле многие из нас в том или ином виде работают с комьюнити: от старосты в школе и старшего по подъезду до руководителя департамента в компании и сотрудника, ответственного за PR. Именно поэтому работа с сообществами — главный тренд во многих областях, от HR до маркетинга.</p>
+            <h3>«Определить боль»: как появились комьюнити-менеджеры</h3>
+            <p>В России профессия комьюнити-менеджера<a href="ya.ru">Яндекс</a> раньше всего появилась в игровой отрасли. Индустрия стремительно развивалась, крупные проекты возникали один за другим, и требовалось быстрое включение игроков в новые игры. Так и появились специалисты, которые стали вводить новичков в курс происходящего. Делали комьюнити-менеджеры это, вдохновляясь примером зарубежных коллег. На Западе, где важность работы с игроками осознали раньше, функции комьюнити-менеджеров в первую очередь выполняли специально внедренные со стороны разработчика игроки — они в режиме реального времени играли, имитируя пользовательский опыт и выясняя «боли» участников. Такие «подсадные игроки» на равных общались с другими пользователями, обсуждали их опыт и передавали информацию разработчику, который затем работал с отзывами и решал накопившиеся проблемы. 1. «Интернет-маркетинг от А до Я» — один из самых ярких примеров создания, развития и монетизации сообщества в индустрии маркетинга. На сегодняшний день оно объединяет 188 478 маркетеров, PR-специалистов, SMM-специалистов и прочих. Идеолог — маркетер Дмитрий Румянцев. Он создал комьюнити (номинально группу «ВКонтакте»), в котором хотел объединить всех специалистов в индустрии маркетинга для решения общих бизнес-задач и обсуждения самых актуальных и эффективных инструментов. 2. Facebook — проект возник как платформа для сообщества студентов Гарвардского университета. Сделан продукт был очень просто, но из-за того, что это было чем-то абсолютно новым, к нему быстро стали присоединяться студенты других учебных заведений. В основном участников привлекала возможность быстро связываться с друзьями и напрямую знакомиться с симпатичными студентами и студентками, подойти к которым в реальности не хватает смелости. Сегодня Facebook — это платформа для миллионов сообществ и известная во всем мире компания, которая исповедует принципы комьюнити-менеджмента.</p>
+            <p><a href="ya.ru">Яндекс</a></p>
+        </div>
+        <hr class="hr_bottom">
+    </div>
+
     </div>
 </div>
-
 
 <footer>
     <div class="wrap">
@@ -178,15 +181,15 @@
         </div>
         <div class="col1">
             <h3>Адрес</h3>
-            <p>186 000 г. Петрозаводск ул. Зайцева<br/>
+            <p>186 031 г. Петрозаводск <br/> ул. Зайцева 65<br/>
 
-                +7 (8142) 798 086 БЮ <br/>
+                +7 (8142) 798 086 <br/>
                 lzpzm@kscgroup.ru</p>
         </div>
         <div class="col1">
             <h3>рабочие часы</h3>
-            <p>Пн-Пт: 8: 00-19: 00 <br/>
-                Сб: 8: 00-14: 00</p>
+            <p>Пн-Пт: 8: 00-19: 00
+            </p>
         </div>
         <div class="col1">
             <h3>последние проекты</h3>
@@ -196,5 +199,3 @@
         </div>
     </div>
 </footer>
-</body>
-</html>

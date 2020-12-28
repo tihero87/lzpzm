@@ -50,7 +50,7 @@
       h4{
         transition: all 0.8s ease;
         //font-size: 20px;
-        font-size: calc(16px + 5 * (100vw - 320px)/1920);
+        font-size: calc(16px + 7 * (100vw - 320px)/1920);
         position: relative;
         font-weight: 400;
         letter-spacing: 2px;
@@ -75,9 +75,9 @@
       }
 
       p{
-        font-size: 17px;
+        font-size: calc(16px + 6  * (100vw - 320px)/1920);
         color: #2c353d;
-        line-height: 28px;
+        line-height: calc(28px + 12  * (100vw - 320px)/1920);
       }
       .img_container{
         //border-radius: 50px;
@@ -96,6 +96,11 @@
 
         li{
           list-style: circle;
+          font-size: calc(16px + 6  * (100vw - 320px)/1920);
+          line-height: calc(20px + 14  * (100vw - 320px)/1920);
+          //font-weight: 200;
+          color: #2c353d;
+          margin-bottom: 8px;
         }
       }
       .twin_col{
@@ -117,7 +122,7 @@
         margin: calc(40px + 25 * (100vw - 320px)/1920);
         text-transform: uppercase;
        // font-size: 28px;
-        font-size: calc(20px + 10 * (100vw - 320px)/1920);
+          font-size: calc(20px + 10 * (100vw - 320px)/1920);
         letter-spacing: 4px;
         position: relative;
       }
@@ -142,6 +147,10 @@
       letter-spacing: 2px;
       line-height: 24px;
     }
+    a, a:visited{
+      color: #000000;
+    }
+
   }
   .img_header{
     width: 100%;

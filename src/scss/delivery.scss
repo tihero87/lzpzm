@@ -3,8 +3,16 @@
     h4::after{
       top: 20px;
     }
-    .twin_col{
-    //  grid-column: 1/3;
+    .twin_row{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .img_container{
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }

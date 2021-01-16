@@ -20,24 +20,25 @@
         display: flex;
         position: absolute;
      // font-size: 30px;
-        font-size: calc(14px + 32 * (100vw - 320px)/1920);
+        font-size: calc(10px + 18 * (100vw - 320px)/1920);
         //text-transform: uppercase;
         //top: 300px;
-        padding: calc(10px + 20 * (100vw - 320px)/1920) 0 0 calc(16px + 70 * (100vw - 320px)/1920);
+        padding: calc(4px + 20 * (100vw - 320px)/1920) 26px 2px calc(6px + 70 * (100vw - 320px)/1920);
         letter-spacing: 2px;
         bottom: 0;
         left: 0;
         right: 0;
         //height: 186px;
-        height: calc(70px + 60 * (100vw - 320px)/1920);
+        height: calc(26px + 40 * (100vw - 320px)/1920);
         width: 100%;
         z-index: 4;
         color: #e6e6e6;
         background-color: rgba(80,187,180, 0.8);
         //line-height: 42px;
-        line-height: calc(20px + 48 * (100vw - 320px)/1920);
-
+        line-height: calc(10px + 28 * (100vw - 320px)/1920);
+        margin-right: 40px;
       }
+
       .stage {
         overflow: hidden;
         .rec {
@@ -51,6 +52,7 @@
             object-fit: cover;
             width: 100%;
             max-height: 640px;
+            min-height: 400px;
             //margin-top: 33px;
             //height: 50px;
           }
@@ -102,14 +104,14 @@
           left: 0;
           right: 0;
           bottom: 0;
-          margin-bottom: calc(5px + 20 * (100vw - 320px)/1920);
+          margin-bottom: calc(0px + 12 * (100vw - 320px)/1920);
 
           li {
             display: inline-block;
           }
           span {
-            width: calc(4px + 4 * (100vw - 320px)/1920);
-            height: calc(4px + 4 * (100vw - 320px)/1920);
+            width: calc(2px + 4 * (100vw - 320px)/1920);
+            height: calc(2px + 4 * (100vw - 320px)/1920);
             display: block;
             margin: 5px;
             -webkit-border-radius: 50%;
@@ -121,7 +123,7 @@
 
         .dots-ctrl .active span {
           opacity: 1;
-          width: 16px;
+          width: 12px;
           border-radius: 8px;
         }
         .dots-ctrl span:hover{

@@ -16,11 +16,13 @@
     flex-wrap: nowrap;
     align-items: center;
     p{
-      // color: #50BBB4;
+      color: #2c353d;
       margin-left: 20px;
-      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 36px;
+      font-size: calc(20px + 26 * (100vw - 320px)/1920);
       letter-spacing: 4px;
-      font-weight: 400;
+      position: relative;
     }
     img{
       width: 180px;
@@ -56,6 +58,7 @@
   background-color: #2c353d;
   height: 50px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 10;

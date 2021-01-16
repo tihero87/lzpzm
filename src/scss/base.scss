@@ -29,6 +29,7 @@
       h3{
         //font-size: 24px;
         font-size: calc(18px + 8 * (100vw - 320px)/1920);
+
         position: relative;
         margin-bottom: 20px;
         font-weight: 400;
@@ -114,15 +115,14 @@
       grid-column-gap: 40px;
     }
 
-
       h1{
         grid-column: 1/4;
         justify-self: center;
-        //margin: 60px;
+        line-height: calc(36px + 25 * (100vw - 320px)/1920);
+        text-align: center;
         margin: calc(40px + 25 * (100vw - 320px)/1920);
         text-transform: uppercase;
-       // font-size: 28px;
-          font-size: calc(20px + 10 * (100vw - 320px)/1920);
+        font-size: calc(20px + 10 * (100vw - 320px)/1920);
         letter-spacing: 4px;
         position: relative;
       }
@@ -132,12 +132,15 @@
         width: 120px;
         border-bottom: 2px solid #50bbb4;
         text-align: center;
-        //top: 28px;
         top: calc(16px + 20 * (100vw - 320px)/1920);
         left: 0;
         right: 0;
         margin: 20px auto;
         transition: all .3s ease;
+      }
+      h2{
+        line-height: 28px;
+        font-size: calc(18px + 10 * (100vw - 320px)/1920);
       }
     h5{
       //font-size: 18px;
@@ -162,6 +165,7 @@
       object-fit: cover;
     }
   }
+
 }
 @media (max-width: 1265px) {
   *{

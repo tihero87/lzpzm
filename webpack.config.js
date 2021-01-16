@@ -17,7 +17,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-         //   images: path.resolve(__dirname, 'src/img/')
+            //   images: path.resolve(__dirname, 'src/img/')
         }
     },
     module: {
@@ -125,17 +125,16 @@ module.exports = {
             template: './managers.html'
         }),
         new HTMLWebpackPlugin({
-            filename: 'article.html',
-            template: './article.html'
+            filename: 'tehnology.html',
+            template: './tehnology.html'
         }),
-
 
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
             {
-               from: path.resolve(__dirname, 'src/img'),
-               to: path.resolve(__dirname, 'dist/img')
-          }
+                from: path.resolve(__dirname, 'src/img'),
+                to: path.resolve(__dirname, 'dist/img')
+            }
         ]),
         new MiniCssExtractPlugin({
             filename: 'style.css'
